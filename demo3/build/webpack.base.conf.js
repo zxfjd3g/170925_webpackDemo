@@ -37,7 +37,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|bmp)$/,
         loader: 'url-loader',  //对小图片进行BASE64处理
         options: {
-          limit: 1024*5,
+          limit: 1024*400,
           name: 'static/img/[name].[hash:8].[ext]' // 生成的文件路径和文件名
         }
       }

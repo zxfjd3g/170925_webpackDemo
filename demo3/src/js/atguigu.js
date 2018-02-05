@@ -1,6 +1,6 @@
 export function studyConfirm() {
   console.log('-----------')
-   return confirm('确定来尚硅谷')
+  return confirm('确定来尚硅谷')
 }
 
 export function goAtguigu() {
