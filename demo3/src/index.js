@@ -13,9 +13,11 @@ import './assets/css/style.css'
 console.log(cube(3))  // 27
 
 $(function () {
+  debugger
   const $app = $('#app')
   const $ul = $('<ul>')
   $app.append($ul)
+  console.log('lessions', lessons)
   lessons.forEach(lesson => {
     $ul.append(`<li>课程名: <span class="lesson-name">${lesson.name}</span>, 时间: ${lesson.days}天</li>`)
   })

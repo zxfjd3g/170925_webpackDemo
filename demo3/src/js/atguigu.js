@@ -1,5 +1,6 @@
 export function studyConfirm() {
-   return confirm('你确定要来尚硅谷学习吗?')
+  console.log('-----------')
+   return confirm('纭畾鏉ュ皻纭呰胺')
 }
 
 export function goAtguigu() {
