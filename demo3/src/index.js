@@ -4,7 +4,7 @@
 // 引入js模块
 import $ from 'jquery'
 import {cube} from "./js/math"
-import * as atguigu from './js/atguigu.js'
+// import * as atguigu from './js/atguigu.js'
 // 引入json模块
 import lessons from './assets/json/lessons.json'
 // 引入css模块
@@ -23,9 +23,14 @@ $(function () {
 
   const $button = $('<button>去尚硅谷</button>')
   $button.click(() => {
-	if(atguigu.studyConfirm()) {
-		atguigu.goAtguigu()
-	}
+    /*if(atguigu.studyConfirm()) {
+      atguigu.goAtguigu()
+    }*/
+    import('./js/atguigu.js').then(atguigu => {
+      if(atguigu.studyConfirm()) {
+        atguigu.goAtguigu()
+      }
+    })
   })
   $app.append($button)
 })

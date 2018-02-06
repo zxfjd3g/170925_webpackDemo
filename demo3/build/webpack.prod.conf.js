@@ -65,6 +65,8 @@ module.exports = merge(baseConfig, {
     // 抽取js中所有css到指定的css文件
     new ExtractTextPlugin({
       filename: 'static/css/[name].[contenthash:8].css'  //[name]就是app
-    })
+    }),
+    // 根据代码内容生成hash作为模块的id(默认是下标)
+    new webpack.HashedModuleIdsPlugin()
   ]
 })

@@ -1,5 +1,5 @@
 export function studyConfirm() {
-  console.log('-----------')
+  console.log('-----------++++++++++')
   return confirm('确定来尚硅谷')
 }
 
